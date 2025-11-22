@@ -1,0 +1,208 @@
+.contact-section {
+    padding: 120px 0 60px;
+    text-align: center;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 240, 255, 0.02) 100%);
+}
+
+.contact-container {
+    max-width: 800px;
+}
+
+.contact-text {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+    border: 1px solid var(--border-bright);
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 350px;
+    justify-content: center;
+}
+
+.contact-item:hover {
+    border-color: var(--accent-cyan);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 240, 255, 0.2);
+}
+
+.contact-item .icon {
+    color: var(--accent-cyan);
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover .icon {
+    color: var(--accent-green);
+    transform: scale(1.2);
+}
+
+.contact-item a,
+.contact-item span {
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover a,
+.contact-item:hover span {
+    color: var(--accent-cyan);
+}
+
+.big-btn {
+    padding: 1.2rem 3.5rem;
+    font-size: 1.1rem;
+    background: transparent;
+    border: 2px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+    font-family: var(--font-mono);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.big-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: var(--accent-cyan);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease, height 0.5s ease;
+    z-index: -1;
+}
+
+.big-btn:hover::before {
+    width: 500px;
+    height: 500px;
+}
+
+.big-btn:hover {
+    color: var(--bg-primary);
+    border-color: var(--accent-cyan);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 240, 255, 0.4);
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.footer-socials a {
+    color: var(--text-secondary);
+    font-size: 2.2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.footer-socials a::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--accent-cyan);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: var(--accent-cyan);
+    transform: translateY(-8px) scale(1.2);
+}
+
+.footer-socials a:hover::after {
+    width: 100%;
+}
+
+.footer {
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+}
+
+.footer p {
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-section {
+        padding: 80px 0 50px;
+    }
+
+    .contact-text {
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .contact-info {
+        gap: 1rem;
+    }
+
+    .contact-item {
+        min-width: auto;
+        width: 100%;
+        padding: 0.9rem 1.5rem;
+    }
+
+    .contact-item .icon {
+        font-size: 1.1rem;
+    }
+
+    .contact-item a,
+    .contact-item span {
+        font-size: 0.85rem;
+    }
+
+    .big-btn {
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .footer-socials {
+        gap: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .footer-socials a {
+        font-size: 2rem;
+    }
+}
