@@ -27,6 +27,18 @@ const Projects = () => {
       description: "Conducted sentiment analysis on 10,000+ airline reviews. Built a booking behavior prediction model analyzing customer attributes.",
       tech: ["Python", "Scikit-learn", "NLP"],
       links: { github: "https://github.com/MEHTAB-XYZ/BritishAirways-VirtualInternship", demo: "#" }
+    },
+    {
+      title: "Legal Judgment Digitizer",
+      description: "A legal judgment digitizer and seach assistant that indexes 1000+ court cases documents using semantic search, metadata filters, and a chatbot interface for natural language queries.",
+      tech: ["Python", "FAISS", "Streamlit", "NLP"],
+      links: { github: "https://github.com/MEHTAB-XYZ/LegalDocumentDigitization-InnovateXHackathon", demo: "#" }
+    },
+    {
+      title: "Face Emotion Detector",
+      description: "A project to detect the Face Emotion using deep learning libraries tensorflow, keras and Open CV for realtime image processing",
+      tech: ["Python", "Tensorflow", "Keras", "OpenCV"],
+      links: { github: "https://github.com/MEHTAB-XYZ/FaceEmotionDetector", demo: "#" }
     }
   ];
 
