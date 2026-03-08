@@ -57,11 +57,23 @@ const Experience = () => {
           <div className="column">
             <h3 className="column-title">Work & Research</h3>
             <div className="timeline-item">
-              <span className="date">Research Intern</span>
-              <h4 className="title">DiceMed</h4>
+              <span className="date">Software Engineering Intern · Dec 2025 – Present · Trivandrum</span>
+              <h4 className="title">Speridian Technologies</h4>
+              <p className="subtitle">Project: CareConnect — Healthcare System</p>
               <p className="description">
-                Applied explainable ML (SHAP) on cross-country healthcare datasets.
-                Co-authored research paper applying interpretable ML in public health policy.
+                Built a healthcare scheduling backend with FastAPI and PostgreSQL, handling
+                multi-department appointments and complex time-slot logic. Integrated Twilio
+                for automated notifications and centralized API logging.
+              </p>
+            </div>
+            <div className="timeline-item">
+              <span className="date">Research Intern · May 2025 – Jun 2025 · Remote</span>
+              <h4 className="title">DiceMed</h4>
+              <p className="subtitle">Project: Explainable ML Analysis of Medicine Pricing</p>
+              <p className="description">
+                Applied SHAP-based explainable ML on cross-country healthcare data to uncover
+                drivers of medicine pricing. Co-authored a research paper on pharmaceutical
+                cost trends across 40+ countries.
               </p>
             </div>
           </div>
@@ -102,9 +114,9 @@ const Experience = () => {
         </div>
       </div>
 
-      <ImageModal 
-        isOpen={modalOpen} 
-        imageUrl={selectedAchievement?.images} 
+      <ImageModal
+        isOpen={modalOpen}
+        imageUrl={selectedAchievement?.images}
         title={selectedAchievement?.title}
         onClose={closeModal}
       />

@@ -101,6 +101,14 @@
     font-size: 0.95rem;
 }
 
+.subtitle {
+    color: var(--accent-cyan);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    opacity: 0.85;
+}
+
 .description {
     color: var(--text-secondary);
     font-size: 0.95rem;
